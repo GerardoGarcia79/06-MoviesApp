@@ -1,4 +1,3 @@
-/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {Image, Pressable, StyleSheet, View} from 'react-native';
 import {Movie} from '../../../core/entities/movie.entity';
@@ -20,12 +19,12 @@ export const MoviePoster = ({movie, height = 420, width = 300}: Props) => {
       style={({pressed}) => ({
         width,
         height,
-        marginHorizontal: 10,
+        marginHorizontal: 4,
         paddingBottom: 20,
-        paddingHorizontal: 10,
+        paddingHorizontal: 5,
         opacity: pressed ? 0.9 : 1,
       })}>
-      <View style={{...styles.imageContainer, width: 300, height: 400}}>
+      <View style={styles.imageContainer}>
         <Image style={styles.image} source={{uri: movie.poster}} />
       </View>
     </Pressable>
