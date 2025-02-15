@@ -26,7 +26,6 @@ export const useMovie = (movieId: number) => {
     setMovie(fullMovie);
     setCast(cast);
     setIsLoading(false);
-    console.log(cast);
   };
 
   return {
